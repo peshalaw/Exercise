@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * Created by peshala on 3/31/16.
  */
@@ -132,9 +131,13 @@ public class Numbers{
         }
     }
 
-    public static void main(String args[]){
-        input();
-
+    public static void main(String args[]) throws Exception {
+        //input();
+        try {
+            SortFromFile.sortNums();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
